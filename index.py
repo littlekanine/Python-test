@@ -54,3 +54,31 @@ b = a + 2
 b +=4  # --> valeur de b + 4 = nouvelle valeur de b 
 
 print(b) # 3 of course / c'est des tests petit coquin
+
+#convertion 
+
+a = 1 
+b = '2'
+c = a + int(b) # = convertion de la chaine de caractére en entier
+print(c)
+
+
+#convertion implicite d'un float 
+
+a = 1
+b = 2.5
+c = a + b
+print(c) #resultat en float même si b = 2.0 --> convertit au type le plus précis
+print(type(c)) #affiche la class "float"
+
+a = 1
+b = True #True est "1" / False est "0"
+c = a + b 
+print(c)
+print(type(c))
+
+#object immuable --> a = 1 --> a = 2 : la valeur sera 2 parce que la valeur de a est remplacer dans le heap
+#object muable ex : list 
+a = [1]
+a.append(2) #ajout du 2 int à la liste
+print(a) # = [1,2]
